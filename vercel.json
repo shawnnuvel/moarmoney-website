@@ -3,6 +3,12 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": "vite",
+  "routes": [
+    { "src": "/privacy.html", "dest": "/privacy.html" },
+    { "src": "/terms.html", "dest": "/terms.html" },
+    { "src": "/privacy", "dest": "/privacy.html" },
+    { "src": "/terms", "dest": "/terms.html" }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
