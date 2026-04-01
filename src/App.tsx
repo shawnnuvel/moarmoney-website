@@ -341,6 +341,7 @@ function App() {
                 <img src="/assets/logo_header.png" alt="MoarMoney" className="h-6 w-auto" />
               </a>
               <p className="text-sm text-[#64748B] mt-2">Make moar. Leak less.</p>
+              <p className="text-xs text-[#94A3B8] mt-1">A product of Nuvel Pte Ltd</p>
             </div>
             <div className="flex items-center gap-6">
               <a href="#/privacy" className="text-sm text-[#94A3B8] hover:text-white transition-colors">Privacy Policy</a>
@@ -349,7 +350,7 @@ function App() {
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-white/5">
-            <p className="text-sm text-[#64748B]">© 2026 MoarMoney. All rights reserved.</p>
+            <p className="text-sm text-[#64748B]">© 2026 Nuvel Pte Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -629,6 +630,7 @@ function App() {
                 <img src="/assets/logo_header.png" alt="MoarMoney" className="h-6 w-auto" />
               </a>
               <p className="text-sm text-[#64748B] mt-2">Make moar. Leak less.</p>
+              <p className="text-xs text-[#94A3B8] mt-1">A product of Nuvel Pte Ltd</p>
             </div>
             <div className="flex items-center gap-6">
               <a href="#/privacy" className="text-sm text-[#94A3B8] hover:text-white transition-colors">Privacy Policy</a>
@@ -637,7 +639,7 @@ function App() {
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-white/5">
-            <p className="text-sm text-[#64748B]">© 2026 MoarMoney. All rights reserved.</p>
+            <p className="text-sm text-[#64748B]">© 2026 Nuvel Pte Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -1201,6 +1203,7 @@ function App() {
                 <img src="/assets/logo_header.png" alt="MoarMoney" className="h-6 w-auto" />
               </a>
               <p className="text-sm text-[#64748B] mt-2">Make moar. Leak less.</p>
+              <p className="text-xs text-[#94A3B8] mt-1">A product of Nuvel Pte Ltd</p>
             </div>
 
             <div className="flex items-center gap-6">
@@ -1211,7 +1214,7 @@ function App() {
           </div>
 
           <div className="text-center mt-8 pt-8 border-t border-white/5">
-            <p className="text-sm text-[#64748B]">© 2026 MoarMoney. All rights reserved.</p>
+            <p className="text-sm text-[#64748B]">© 2026 Nuvel Pte Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>
