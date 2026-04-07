@@ -76,7 +76,7 @@ function PhoneMockup({
   );
 }
 
-// FAQ data — 5 questions
+// FAQ data — 6 questions
 const faqs = [
   {
     question: "What exactly is MoarMoney?",
@@ -92,11 +92,15 @@ const faqs = [
   },
   {
     question: "Where is my data stored?",
-    answer: "Your data is securely encrypted and synced so you never lose it — even when you change phones. We never share your clients' information with anyone else, ever. Your book stays yours."
+    answer: "Your data are stored securely in the cloud using industry-standard encryption. Our servers are hosted in Singapore for fast access and compliance with local regulations. You own your data. Export or delete it anytime from Settings."
   },
   {
     question: "How much does it cost?",
-    answer: "Free during beta. We'll announce pricing before the official launch — founding members will get special rates."
+    answer: "Start with a 14-day free trial — no credit card required. After that, you can choose from any of these plans:\n\n- Monthly: $29/month\n- Annual: $19/month (billed $228/year) — save 35%\n- Lifetime: $499 one-time — never pay again\n\nAll plans include unlimited deals, voice logging, follow-up reminders, and commission tracking. Cancel anytime."
+  },
+  {
+    question: "Is MoarMoney PDPA compliant?",
+    answer: "Yes! MoarMoney is compliant under Singapore's Personal Data Protection Act. We're the data controller for your account info and the data intermediary (processor) for the client information you store. Your data is encrypted and stored securely. Export or delete it anytime from the app."
   }
 ];
 
@@ -156,7 +160,7 @@ function App() {
       <main className="pt-24 md:pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <p className="text-[#94A3B8] text-sm mb-2">Effective Date: March 18, 2026 | Last Updated: March 18, 2026</p>
+            <p className="text-[#94A3B8] text-sm mb-2">Effective Date: March 18, 2026 | Last Updated: April 6, 2026</p>
             <h1 className="text-4xl md:text-5xl font-bold">Privacy Policy</h1>
           </div>
 
@@ -165,7 +169,7 @@ function App() {
               <h2 className="text-2xl font-bold mb-4 text-white">1. INTRODUCTION</h2>
               <p className="text-[#94A3B8] mb-4">MoarMoney ("MoarMoney," "we," "us," or "our") is committed to protecting the privacy and security of personal data. This Privacy Policy describes how we collect, use, disclose, and otherwise process personal data in connection with the MoarMoney mobile application and related services (collectively, the "Service").</p>
               <p className="text-[#94A3B8] mb-4">This Privacy Policy applies to individuals who access or use the Service, including registered users and visitors ("you" or "User"). By accessing or using the Service, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree to this Privacy Policy, you must not access or use the Service.</p>
-              <p className="text-[#94A3B8]">We process personal data in accordance with the Personal Data Protection Act 2012 of Singapore ("PDPA") and other applicable data protection laws. For the purposes of applicable data protection legislation, MoarMoney is the data controller responsible for your personal data.</p>
+              <p className="text-[#94A3B8]">We process personal data in accordance with the Personal Data Protection Act 2012 of Singapore ("PDPA") and other applicable data protection laws. For the purposes of applicable data protection legislation, MoarMoney is the data controller responsible for your personal data when you create an account and use our Service. With respect to information about your clients or contacts that you choose to input, MoarMoney acts as a data intermediary (processor) — see Section 3.4 for details.</p>
             </section>
 
             <section className="mb-10">
@@ -197,7 +201,12 @@ function App() {
               <p className="text-[#94A3B8] mb-4"><strong className="text-white">Diagnostic Information.</strong> We may collect technical information about errors, crashes, and performance issues to maintain and improve the Service. This information is collected in an anonymised or pseudonymised form where possible.</p>
 
               <h3 className="text-xl font-semibold mb-3 text-white">3.3 Information from Third Parties</h3>
-              <p className="text-[#94A3B8]">We may receive information about you from third parties, including authentication service providers, analytics providers, and other partners. We treat information received from third parties in accordance with this Privacy Policy.</p>
+              <p className="text-[#94A3B8] mb-4">We may receive information about you from third parties, including authentication service providers, analytics providers, and other partners. We treat information received from third parties in accordance with this Privacy Policy.</p>
+
+              <h3 className="text-xl font-semibold mb-3 text-white">3.4 Information About Your Clients and Contacts</h3>
+              <p className="text-[#94A3B8] mb-4">MoarMoney provides tools for you to organise and manage your professional contacts and deal information. When you input information about your clients, prospects, or other third parties into the Service, you do so at your own discretion as part of your business activities.</p>
+              <p className="text-[#94A3B8] mb-4">We function as a data intermediary with respect to such third-party information. We process this data solely to provide the Service to you and do not independently collect, use, or disclose such information for any other purpose.</p>
+              <p className="text-[#94A3B8]">We are not responsible for obtaining consent on your behalf from individuals whose information you choose to store. By using the Service, you represent that you have the necessary rights and permissions to store and process any third-party information you input, and you acknowledge your responsibility for compliance with applicable data protection laws, including the PDPA, in relation to such data.</p>
             </section>
 
             <section className="mb-10">
@@ -319,7 +328,7 @@ function App() {
             </section>
 
             <div className="border-t border-white/10 pt-8 mt-12">
-              <p className="text-[#64748B] text-sm">This Privacy Policy was last updated on March 18, 2026.</p>
+              <p className="text-[#64748B] text-sm">This Privacy Policy was last updated on April 6, 2026.</p>
             </div>
 
             <div className="mt-12">
@@ -673,7 +682,7 @@ function App() {
               onClick={() => scrollToSection('waitlist')}
               className="bg-[#22C55E] hover:bg-[#16A34A] text-[#0F172A] font-semibold px-4 md:px-6 py-2 text-sm"
             >
-              Join the Beta
+              Start Free Trial
             </Button>
           </div>
         </div>
@@ -704,7 +713,7 @@ function App() {
                   onClick={() => scrollToSection('waitlist')}
                   className="bg-[#22C55E] hover:bg-[#16A34A] text-[#0F172A] font-semibold px-8 py-6 text-lg glow-green"
                 >
-                  Join the Beta
+                  Start Free Trial
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <button 
@@ -1150,13 +1159,13 @@ function App() {
                 className="flex-1 bg-[#1E293B] border-white/10 text-white placeholder:text-[#64748B] h-14"
               />
               <Button type="submit" className="bg-[#22C55E] hover:bg-[#16A34A] text-[#0F172A] font-semibold px-8 h-14 text-lg glow-green">
-                Join the Beta
+                Start Free Trial
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </form>
           )}
 
-          <p className="text-sm text-[#64748B]">Free during beta. No credit card required.</p>
+          <p className="text-sm text-[#64748B]">14-day free trial. No credit card required.</p>
         </div>
       </section>
 
